@@ -80,24 +80,25 @@ def task10():
     print(total)
 
 def ops():
-    if task == "1":
-        task1()
-    elif task == "2":
-        task2()
-    elif task == "3":
-        task3()
-    elif task == "4":
-        task4()
-    elif task == "5":
-        task5()
-    elif task == "6":
-        task6()
-    elif task == "7":
-        task7()
-    elif task == "9":
-        task9()
-    elif task == "10":
-        task10()        
+    match task:
+        case "1":
+            return task1()
+        case "2":
+            return task2()
+        case "3":
+            return task3()
+        case "4":
+            return task4()
+        case "5":
+            return task5()
+        case "6":
+            return task6()
+        case "7":
+            return task7()
+        case "9":
+            return task9()
+        case "10":
+            return task10()       
 try:
     start()
 except KeyboardInterrupt:
